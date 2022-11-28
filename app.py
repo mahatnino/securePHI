@@ -52,7 +52,7 @@ def image_conversion(img):
     cv2.imwrite('static/uploads/'+file_name,img)
        
 @app.route("/")
-def main():
+def index():
     return 'Homepage'
 
 @app.route('/upload', methods=['POST'])
